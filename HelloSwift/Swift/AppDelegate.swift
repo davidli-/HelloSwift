@@ -82,8 +82,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        SortUtil.selectSort(sourceArr: &anArr)
 //        print(anArr)
 //        OCFile.classFunction()
-        let hello = Hello()
-        hello.internalMethod()
         return true
     }
 

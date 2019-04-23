@@ -203,6 +203,10 @@ class ViewController: UIViewController {
     @IBAction func onAction(_ sender: Any) {
         let board = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = board.instantiateViewController(withIdentifier: "v")
+        let valueR = CGFloat(arc4random() % 10) / 10.0;
+        let valueG = CGFloat(arc4random() % 10) / 10.0;
+        let valueB = CGFloat(arc4random() % 10) / 10.0;
+        viewController.view.backgroundColor = UIColor.init(red: valueR, green: valueG, blue: valueB, alpha: 1)
         present(viewController,animated: true,completion: nil)
     }
     
