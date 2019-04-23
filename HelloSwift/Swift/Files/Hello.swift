@@ -52,6 +52,16 @@ class Hello: B {
 
 //Extension
 extension Hello {
+    
+    //var storeVar : Int //扩展中不能声明存储属性
+    var computeVar : Int{
+        return 8
+    }
+    /*swift的扩展中不能重写原类中的方法
+    func aFuncName(x:Int) {
+    }
+    */
+    
     internal func internalMethod(){}
     fileprivate func filePrivateMethod(){}
     private func privateMethod(){}

@@ -1,14 +1,14 @@
 //
-//  Multhread.swift
+//  GCDHelper.swift
 //  HelloSwift
 //
-//  Created by Macmafia on 2018/9/15.
-//  Copyright © 2018年 Macmafia. All rights reserved.
+//  Created by Macmafia on 2019/4/24.
+//  Copyright © 2019 Macmafia. All rights reserved.
 //
 
 import Foundation
 
-class Multhread {
+class GCDHelper {
     
     func callSerialQueue(isSerial:Bool) {
         
@@ -73,5 +73,27 @@ class Multhread {
                 print("++++End time: \(Date())")
             }
         }
+    }
+    
+    func startGCDTimer() {
+        
+        var count = 0
+        let aTimerSource = DispatchSource.makeTimerSource()
+        
+        //设置5秒后触发，每秒触发一次(repeating= .never时 只触发一次)
+        aTimerSource.schedule(deadline: (.now() + 5), repeating: .seconds(1))
+        aTimerSource.setEventHandler {
+            count += 1
+            if count >= 5 {
+                aTimerSource.cancel()
+                print("++GCD TIMER canceled~")
+            }else{
+                DispatchQueue.main.async {
+                    print("++\(count)")
+                }
+            }
+        }
+        //开始
+        aTimerSource.resume()
     }
 }

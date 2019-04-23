@@ -16,11 +16,11 @@
 		0A08B0C8212EDF2E00D99210 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A08B0C7212EDF2E00D99210 /* Hello.swift */; };
 		0A19F182216B897600C2F127 /* SortUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A19F181216B897600C2F127 /* SortUtil.swift */; };
 		0A5A58B6213AE06B001FBBE5 /* OCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A58B5213AE06B001FBBE5 /* OCFile.m */; };
+		0A947CCA226F700D00E1FE61 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A947CC9226F700D00E1FE61 /* GCDHelper.swift */; };
 		0A9D2C572136EFD200046A8A /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D2C562136EFD200046A8A /* KVO.swift */; };
 		0AA9C455214106CC003F8201 /* RuntimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA9C454214106CC003F8201 /* RuntimeTool.swift */; };
 		0AC3F89C213EED2600A2C4D1 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */; };
 		0AD09B932130572C0006A32D /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD09B922130572C0006A32D /* IntExtension.swift */; };
-		0ADA90B0214D50A800196842 /* Multhread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA90AF214D50A800196842 /* Multhread.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +36,12 @@
 		0A5A58B3213AE06B001FBBE5 /* OCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFile.h; sourceTree = "<group>"; };
 		0A5A58B4213AE06B001FBBE5 /* HelloSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A5A58B5213AE06B001FBBE5 /* OCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFile.m; sourceTree = "<group>"; };
+		0A947CC9226F700D00E1FE61 /* GCDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
 		0A9D2C562136EFD200046A8A /* KVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVO.swift; sourceTree = "<group>"; };
 		0AA9C454214106CC003F8201 /* RuntimeTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeTool.swift; sourceTree = "<group>"; };
 		0AA9C4582142CA75003F8201 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HelloSwift/Info.plist; sourceTree = SOURCE_ROOT; };
 		0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		0AD09B922130572C0006A32D /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
-		0ADA90AF214D50A800196842 /* Multhread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multhread.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,8 @@
 				0A9D2C562136EFD200046A8A /* KVO.swift */,
 				0A08B0C7212EDF2E00D99210 /* Hello.swift */,
 				0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */,
+				0A947CC9226F700D00E1FE61 /* GCDHelper.swift */,
 				0AA9C454214106CC003F8201 /* RuntimeTool.swift */,
-				0ADA90AF214D50A800196842 /* Multhread.swift */,
 				0A19F181216B897600C2F127 /* SortUtil.swift */,
 			);
 			path = Files;
@@ -203,7 +203,7 @@
 				0AA9C455214106CC003F8201 /* RuntimeTool.swift in Sources */,
 				0AC3F89C213EED2600A2C4D1 /* Dispatch.swift in Sources */,
 				0A5A58B6213AE06B001FBBE5 /* OCFile.m in Sources */,
-				0ADA90B0214D50A800196842 /* Multhread.swift in Sources */,
+				0A947CCA226F700D00E1FE61 /* GCDHelper.swift in Sources */,
 				0A08B0B3212ED8C400D99210 /* AppDelegate.swift in Sources */,
 				0A08B0C8212EDF2E00D99210 /* Hello.swift in Sources */,
 				0A9D2C572136EFD200046A8A /* KVO.swift in Sources */,
