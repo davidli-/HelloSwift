@@ -19,23 +19,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xb-br-4yf">
-                                <rect key="frame" x="176.5" y="322.5" width="22" height="22"/>
+                                <rect key="frame" x="134.5" y="322.5" width="22" height="22"/>
                                 <connections>
                                     <action selector="onAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0Z-Br-i9o"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tll-in-j6a">
-                                <rect key="frame" x="176.5" y="364.5" width="22" height="22"/>
+                                <rect key="frame" x="176.5" y="322.5" width="22" height="22"/>
                                 <connections>
                                     <action selector="onDismissAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ocp-x2-3Sg"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncg-mg-RHR">
+                                <rect key="frame" x="130" y="364.5" width="115" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN9-ey-hIH" customClass="HeExpandButton" customModule="HelloSwift" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="25" width="65" height="24"/>
+                                        <color key="backgroundColor" red="1" green="0.71000210080000004" blue="0.060890716630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                        <state key="normal" title="识别区域"/>
+                                        <connections>
+                                            <action selector="onClickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEr-SU-S7q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xN9-ey-hIH" secondAttribute="trailing" constant="25" id="5GN-hC-OOP"/>
+                                    <constraint firstItem="xN9-ey-hIH" firstAttribute="top" secondItem="Ncg-mg-RHR" secondAttribute="top" constant="25" id="KAD-yl-WWn"/>
+                                    <constraint firstItem="xN9-ey-hIH" firstAttribute="leading" secondItem="Ncg-mg-RHR" secondAttribute="leading" constant="25" id="ehM-am-enZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="xN9-ey-hIH" secondAttribute="bottom" constant="25" id="hsH-au-kHf"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8Xb-br-4yf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dWd-cP-GWb"/>
-                            <constraint firstItem="Tll-in-j6a" firstAttribute="top" secondItem="8Xb-br-4yf" secondAttribute="bottom" constant="20" id="laK-4e-qr7"/>
+                            <constraint firstItem="Ncg-mg-RHR" firstAttribute="top" secondItem="8Xb-br-4yf" secondAttribute="bottom" constant="20" id="0cF-H8-1Gb"/>
+                            <constraint firstItem="Tll-in-j6a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6QG-lr-x0b"/>
+                            <constraint firstItem="Tll-in-j6a" firstAttribute="leading" secondItem="8Xb-br-4yf" secondAttribute="trailing" constant="20" id="dpC-vR-d5C"/>
                             <constraint firstItem="8Xb-br-4yf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oYu-I3-Zwe"/>
+                            <constraint firstItem="Ncg-mg-RHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="th1-n9-c1a"/>
                             <constraint firstItem="Tll-in-j6a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wOR-YG-zst"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -47,11 +71,13 @@
                     </view>
                     <connections>
                         <outlet property="dismissBtn" destination="Tll-in-j6a" id="dmD-SD-gSn"/>
+                        <outlet property="expandBtn" destination="xN9-ey-hIH" id="oGa-TX-ulY"/>
                         <outlet property="pushBtn" destination="8Xb-br-4yf" id="MgC-tE-hSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="130.88455772113943"/>
         </scene>
     </scenes>
 </document>

@@ -19,6 +19,8 @@ class ViewController: UIViewController {
      */
     @IBOutlet weak var pushBtn: UIButton!
     @IBOutlet weak var dismissBtn: UIButton!
+    @IBOutlet weak var expandBtn: HeExpandButton!
+    
     var timer: Timer?
     
     override func viewDidLoad() {
@@ -49,10 +51,10 @@ class ViewController: UIViewController {
         btn.sizeToFit()
         view.addSubview(btn)
         
-        let consX = NSLayoutConstraint(item: btn, attribute: .centerX, relatedBy: .equal,
-                                       toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0)
-        let consY = NSLayoutConstraint(item: btn, attribute: .top, relatedBy: .equal,
-                                      toItem: dismissBtn, attribute: .bottom, multiplier: 1.0, constant: 20)
+        let consX = NSLayoutConstraint(item: btn, attribute: .leading, relatedBy: .equal,
+                                       toItem: dismissBtn, attribute: .trailing, multiplier: 1.0, constant: 20)
+        let consY = NSLayoutConstraint(item: btn, attribute: .centerY, relatedBy: .equal,
+                                      toItem: view, attribute: .centerY, multiplier: 1.0, constant: 0)
         view.addConstraints([consX,consY])
         
         
@@ -64,6 +66,11 @@ class ViewController: UIViewController {
         print("onClicked btn~")
         
         // TODO: -测试TODO标签
+        if let valid = timer?.isValid {
+            if valid{
+                timer?.invalidate()
+            }
+        }
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,
                                      selector: #selector(onTimer), userInfo: nil, repeats: true)
         RunLoop.current.add(timer!, forMode: .commonModes)
@@ -82,6 +89,7 @@ class ViewController: UIViewController {
         print("++ deinited !")
     }
     
+    // MARK: -Actions
     @IBAction func onAction(_ sender: Any) {
         let board = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = board.instantiateViewController(withIdentifier: "v")
@@ -96,5 +104,10 @@ class ViewController: UIViewController {
         timer?.invalidate()
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func onClickBtn(_ sender: Any) {
+        print("clicked Expanded Button~~")
+    }
+    
 }
 
