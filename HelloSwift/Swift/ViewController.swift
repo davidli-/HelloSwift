@@ -20,6 +20,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var pushBtn: UIButton!
     @IBOutlet weak var dismissBtn: UIButton!
     @IBOutlet weak var expandBtn: HeExpandButton!
+    @IBOutlet weak var mTitleLabel: UILabel!
+    
+    var labelTitle: String? = "默认值" {
+        willSet{
+            mTitleLabel.text = newValue
+        }
+        didSet{
+            print("++pre title: \(oldValue ?? "默认值")")
+        }
+    }
     
     var timer: Timer?
     
@@ -40,6 +50,14 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
     
     //设置UI

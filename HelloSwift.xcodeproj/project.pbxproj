@@ -17,11 +17,14 @@
 		0A12347C2270BDE800B01CFD /* HeExpandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A12347B2270BDE800B01CFD /* HeExpandButton.swift */; };
 		0A19F182216B897600C2F127 /* SortUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A19F181216B897600C2F127 /* SortUtil.swift */; };
 		0A5A58B6213AE06B001FBBE5 /* OCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A58B5213AE06B001FBBE5 /* OCFile.m */; };
+		0A62236922720C530018B35D /* HeSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62236822720C530018B35D /* HeSlideViewController.swift */; };
+		0A62236B227234370018B35D /* HeSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62236A227234370018B35D /* HeSlideView.swift */; };
 		0A947CCA226F700D00E1FE61 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A947CC9226F700D00E1FE61 /* GCDHelper.swift */; };
 		0A9D2C572136EFD200046A8A /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D2C562136EFD200046A8A /* KVO.swift */; };
 		0AA9C455214106CC003F8201 /* RuntimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA9C454214106CC003F8201 /* RuntimeTool.swift */; };
 		0AC3F89C213EED2600A2C4D1 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */; };
 		0AD09B932130572C0006A32D /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD09B922130572C0006A32D /* IntExtension.swift */; };
+		DDBAC5F1BEADE575C67EC30D /* Pods_HelloSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80B92E9B99243365950FE0D /* Pods_HelloSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +41,17 @@
 		0A5A58B3213AE06B001FBBE5 /* OCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFile.h; sourceTree = "<group>"; };
 		0A5A58B4213AE06B001FBBE5 /* HelloSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A5A58B5213AE06B001FBBE5 /* OCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFile.m; sourceTree = "<group>"; };
+		0A62236822720C530018B35D /* HeSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeSlideViewController.swift; sourceTree = "<group>"; };
+		0A62236A227234370018B35D /* HeSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeSlideView.swift; sourceTree = "<group>"; };
 		0A947CC9226F700D00E1FE61 /* GCDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
 		0A9D2C562136EFD200046A8A /* KVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVO.swift; sourceTree = "<group>"; };
 		0AA9C454214106CC003F8201 /* RuntimeTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeTool.swift; sourceTree = "<group>"; };
 		0AA9C4582142CA75003F8201 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HelloSwift/Info.plist; sourceTree = SOURCE_ROOT; };
 		0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		0AD09B922130572C0006A32D /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		314A67A3DC8A2680C1C6AE9D /* Pods-HelloSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloSwift/Pods-HelloSwift.release.xcconfig"; sourceTree = "<group>"; };
+		CC6F7642BCE0FDEC488504EE /* Pods-HelloSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloSwift/Pods-HelloSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		E80B92E9B99243365950FE0D /* Pods_HelloSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +59,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDBAC5F1BEADE575C67EC30D /* Pods_HelloSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0595D4DB4A5C5FC26E499830 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E80B92E9B99243365950FE0D /* Pods_HelloSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A080816227352DC00E7BF06 /* Hello */ = {
+			isa = PBXGroup;
+			children = (
+				0A08B0C7212EDF2E00D99210 /* Hello.swift */,
+				0AD09B922130572C0006A32D /* IntExtension.swift */,
+				0A9D2C562136EFD200046A8A /* KVO.swift */,
+				0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */,
+				0A947CC9226F700D00E1FE61 /* GCDHelper.swift */,
+				0AA9C454214106CC003F8201 /* RuntimeTool.swift */,
+				0A19F181216B897600C2F127 /* SortUtil.swift */,
+			);
+			path = Hello;
+			sourceTree = "<group>";
+		};
 		0A08B0A6212ED8C400D99210 = {
 			isa = PBXGroup;
 			children = (
 				0A08B0B1212ED8C400D99210 /* HelloSwift */,
 				0A08B0B0212ED8C400D99210 /* Products */,
+				EFA38BA6E8FA654FF70A3516 /* Pods */,
+				0595D4DB4A5C5FC26E499830 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,17 +145,21 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		0A62236522720BB80018B35D /* TopSlide */ = {
+			isa = PBXGroup;
+			children = (
+				0A62236822720C530018B35D /* HeSlideViewController.swift */,
+				0A62236A227234370018B35D /* HeSlideView.swift */,
+			);
+			path = TopSlide;
+			sourceTree = "<group>";
+		};
 		0AA9C4562142C998003F8201 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A080816227352DC00E7BF06 /* Hello */,
 				0A12347D2270CBDB00B01CFD /* UIViews */,
-				0A08B0C7212EDF2E00D99210 /* Hello.swift */,
-				0AD09B922130572C0006A32D /* IntExtension.swift */,
-				0A9D2C562136EFD200046A8A /* KVO.swift */,
-				0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */,
-				0A947CC9226F700D00E1FE61 /* GCDHelper.swift */,
-				0AA9C454214106CC003F8201 /* RuntimeTool.swift */,
-				0A19F181216B897600C2F127 /* SortUtil.swift */,
+				0A62236522720BB80018B35D /* TopSlide */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -138,6 +175,15 @@
 			path = Res;
 			sourceTree = "<group>";
 		};
+		EFA38BA6E8FA654FF70A3516 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F7642BCE0FDEC488504EE /* Pods-HelloSwift.debug.xcconfig */,
+				314A67A3DC8A2680C1C6AE9D /* Pods-HelloSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A08B0C4212ED8C500D99210 /* Build configuration list for PBXNativeTarget "HelloSwift" */;
 			buildPhases = (
+				E71166C37E53EB6EFD75FF43 /* [CP] Check Pods Manifest.lock */,
 				0A08B0AB212ED8C400D99210 /* Sources */,
 				0A08B0AC212ED8C400D99210 /* Frameworks */,
 				0A08B0AD212ED8C400D99210 /* Resources */,
+				B0A9FD11EA13BE82A305A7CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,11 +253,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B0A9FD11EA13BE82A305A7CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloSwift/Pods-HelloSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloSwift/Pods-HelloSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E71166C37E53EB6EFD75FF43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A08B0AB212ED8C400D99210 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A62236922720C530018B35D /* HeSlideViewController.swift in Sources */,
 				0A08B0B5212ED8C400D99210 /* ViewController.swift in Sources */,
 				0AA9C455214106CC003F8201 /* RuntimeTool.swift in Sources */,
 				0AC3F89C213EED2600A2C4D1 /* Dispatch.swift in Sources */,
@@ -220,6 +308,7 @@
 				0A08B0C8212EDF2E00D99210 /* Hello.swift in Sources */,
 				0A9D2C572136EFD200046A8A /* KVO.swift in Sources */,
 				0A19F182216B897600C2F127 /* SortUtil.swift in Sources */,
+				0A62236B227234370018B35D /* HeSlideView.swift in Sources */,
 				0AD09B932130572C0006A32D /* IntExtension.swift in Sources */,
 				0A08B0BB212ED8C400D99210 /* HelloSwift.xcdatamodeld in Sources */,
 			);
@@ -363,6 +452,7 @@
 		};
 		0A08B0C5212ED8C500D99210 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6F7642BCE0FDEC488504EE /* Pods-HelloSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -383,6 +473,7 @@
 		};
 		0A08B0C6212ED8C500D99210 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314A67A3DC8A2680C1C6AE9D /* Pods-HelloSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
