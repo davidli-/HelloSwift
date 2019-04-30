@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions
         launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
+        UINavigationBar.appearance().barTintColor = UIColor.yellow
         /*
         //测试SWIT混编OC
         let ocf = OCFile()
@@ -91,7 +92,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
+    //支持的方向
+    func application(_ application: UIApplication,
+                     supportedInterfaceOrientationsFor
+        window: UIWindow?) -> UIInterfaceOrientationMask
+    {
+        /*返回的mask是一个集合，可以使用[*,*...]的数组形式，也可以是定义好的结构体中的属性
+         return [.portrait,.landscapeLeft,.landscapeRight]
+         */
+        return .allButUpsideDown
+    }
+    
     func applicationWillTerminate(_ application: UIApplication)
     {
         self.saveContext()

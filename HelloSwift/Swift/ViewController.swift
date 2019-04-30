@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: HeParentViewController {
 
     /**
      * # 多行注释
@@ -72,10 +72,8 @@ class ViewController: UIViewController {
         let consX = NSLayoutConstraint(item: btn, attribute: .leading, relatedBy: .equal,
                                        toItem: dismissBtn, attribute: .trailing, multiplier: 1.0, constant: 20)
         let consY = NSLayoutConstraint(item: btn, attribute: .centerY, relatedBy: .equal,
-                                      toItem: view, attribute: .centerY, multiplier: 1.0, constant: 0)
+                                      toItem: dismissBtn, attribute: .centerY, multiplier: 1.0, constant: 0)
         view.addConstraints([consX,consY])
-        
-        
     }
     
     // MARK: - @objc selector
@@ -110,7 +108,7 @@ class ViewController: UIViewController {
     // MARK: -Actions
     @IBAction func onAction(_ sender: Any) {
         let board = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let viewController = board.instantiateViewController(withIdentifier: "v")
+        let viewController = board.instantiateViewController(withIdentifier: "ViewController")
         let valueR = CGFloat(arc4random() % 10) / 10.0;
         let valueG = CGFloat(arc4random() % 10) / 10.0;
         let valueB = CGFloat(arc4random() % 10) / 10.0;
@@ -118,13 +116,24 @@ class ViewController: UIViewController {
         present(viewController,animated: true,completion: nil)
     }
     
+    /// 文档注释：页面消失
+    ///
+    /// - Parameters:
+    ///   - sender: 按钮
     @IBAction func onDismissAction(_ sender: Any) {
         timer?.invalidate()
         dismiss(animated: true, completion: nil)
     }
     
+    /**
+     * # 响应按钮点击事件
+     - parameter sender: 控件
+     */
     @IBAction func onClickBtn(_ sender: Any) {
         print("clicked Expanded Button~~")
+    }
+    
+    @IBAction func onNext(_ sender: Any) {
     }
     
 }

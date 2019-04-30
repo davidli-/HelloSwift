@@ -17,13 +17,17 @@
 		0A12347C2270BDE800B01CFD /* HeExpandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A12347B2270BDE800B01CFD /* HeExpandButton.swift */; };
 		0A19F182216B897600C2F127 /* SortUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A19F181216B897600C2F127 /* SortUtil.swift */; };
 		0A5A58B6213AE06B001FBBE5 /* OCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A58B5213AE06B001FBBE5 /* OCFile.m */; };
-		0A62236922720C530018B35D /* HeSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62236822720C530018B35D /* HeSlideViewController.swift */; };
-		0A62236B227234370018B35D /* HeSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62236A227234370018B35D /* HeSlideView.swift */; };
+		0A8BBD1922789E6D00E6F30D /* HeParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BBD1822789E6D00E6F30D /* HeParentViewController.swift */; };
 		0A947CCA226F700D00E1FE61 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A947CC9226F700D00E1FE61 /* GCDHelper.swift */; };
 		0A9D2C572136EFD200046A8A /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D2C562136EFD200046A8A /* KVO.swift */; };
 		0AA9C455214106CC003F8201 /* RuntimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA9C454214106CC003F8201 /* RuntimeTool.swift */; };
 		0AC3F89C213EED2600A2C4D1 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */; };
 		0AD09B932130572C0006A32D /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD09B922130572C0006A32D /* IntExtension.swift */; };
+		0ADE260D2275952C002B6DEF /* HeDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE260C2275952C002B6DEF /* HeDefines.swift */; };
+		0AF09B4A22776A1D00BF4883 /* HeSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF09B4922776A1D00BF4883 /* HeSlideViewController.swift */; };
+		0AF09B4C22776A3F00BF4883 /* HeSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF09B4B22776A3F00BF4883 /* HeSlideView.swift */; };
+		0AF09B4F22776DAF00BF4883 /* HeOrientationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF09B4D22776DAF00BF4883 /* HeOrientationViewController.swift */; };
+		0AF09B5022776DAF00BF4883 /* HeNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF09B4E22776DAF00BF4883 /* HeNaviController.swift */; };
 		DDBAC5F1BEADE575C67EC30D /* Pods_HelloSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80B92E9B99243365950FE0D /* Pods_HelloSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,14 +45,18 @@
 		0A5A58B3213AE06B001FBBE5 /* OCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFile.h; sourceTree = "<group>"; };
 		0A5A58B4213AE06B001FBBE5 /* HelloSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A5A58B5213AE06B001FBBE5 /* OCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFile.m; sourceTree = "<group>"; };
-		0A62236822720C530018B35D /* HeSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeSlideViewController.swift; sourceTree = "<group>"; };
-		0A62236A227234370018B35D /* HeSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeSlideView.swift; sourceTree = "<group>"; };
+		0A8BBD1822789E6D00E6F30D /* HeParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeParentViewController.swift; sourceTree = "<group>"; };
 		0A947CC9226F700D00E1FE61 /* GCDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
 		0A9D2C562136EFD200046A8A /* KVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVO.swift; sourceTree = "<group>"; };
 		0AA9C454214106CC003F8201 /* RuntimeTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeTool.swift; sourceTree = "<group>"; };
 		0AA9C4582142CA75003F8201 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HelloSwift/Info.plist; sourceTree = SOURCE_ROOT; };
 		0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		0AD09B922130572C0006A32D /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		0ADE260C2275952C002B6DEF /* HeDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeDefines.swift; sourceTree = "<group>"; };
+		0AF09B4922776A1D00BF4883 /* HeSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeSlideViewController.swift; sourceTree = "<group>"; };
+		0AF09B4B22776A3F00BF4883 /* HeSlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeSlideView.swift; sourceTree = "<group>"; };
+		0AF09B4D22776DAF00BF4883 /* HeOrientationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeOrientationViewController.swift; path = HelloSwift/Swift/Files/Rotate/HeOrientationViewController.swift; sourceTree = SOURCE_ROOT; };
+		0AF09B4E22776DAF00BF4883 /* HeNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeNaviController.swift; path = HelloSwift/Swift/Files/Rotate/HeNaviController.swift; sourceTree = SOURCE_ROOT; };
 		314A67A3DC8A2680C1C6AE9D /* Pods-HelloSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloSwift/Pods-HelloSwift.release.xcconfig"; sourceTree = "<group>"; };
 		CC6F7642BCE0FDEC488504EE /* Pods-HelloSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloSwift/Pods-HelloSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		E80B92E9B99243365950FE0D /* Pods_HelloSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +92,7 @@
 				0A947CC9226F700D00E1FE61 /* GCDHelper.swift */,
 				0AA9C454214106CC003F8201 /* RuntimeTool.swift */,
 				0A19F181216B897600C2F127 /* SortUtil.swift */,
+				0ADE260C2275952C002B6DEF /* HeDefines.swift */,
 			);
 			path = Hello;
 			sourceTree = "<group>";
@@ -115,12 +124,22 @@
 			path = HelloSwift;
 			sourceTree = "<group>";
 		};
-		0A12347D2270CBDB00B01CFD /* UIViews */ = {
+		0A12347D2270CBDB00B01CFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				0A12347B2270BDE800B01CFD /* HeExpandButton.swift */,
 			);
-			path = UIViews;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A49646D227613BD0012E948 /* Rotate */ = {
+			isa = PBXGroup;
+			children = (
+				0AF09B4E22776DAF00BF4883 /* HeNaviController.swift */,
+				0AF09B4D22776DAF00BF4883 /* HeOrientationViewController.swift */,
+			);
+			name = Rotate;
+			path = TopSlide/Rotate;
 			sourceTree = "<group>";
 		};
 		0A5A5897213AA2C3001FBBE5 /* Objective-C */ = {
@@ -137,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				0A08B0B2212ED8C400D99210 /* AppDelegate.swift */,
+				0A8BBD1822789E6D00E6F30D /* HeParentViewController.swift */,
 				0A08B0B4212ED8C400D99210 /* ViewController.swift */,
 				0AA9C4562142C998003F8201 /* Files */,
 				0AA9C4572142C9AF003F8201 /* Res */,
@@ -145,21 +165,22 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
-		0A62236522720BB80018B35D /* TopSlide */ = {
+		0A62236522720BB80018B35D /* Slide */ = {
 			isa = PBXGroup;
 			children = (
-				0A62236822720C530018B35D /* HeSlideViewController.swift */,
-				0A62236A227234370018B35D /* HeSlideView.swift */,
+				0AF09B4B22776A3F00BF4883 /* HeSlideView.swift */,
+				0AF09B4922776A1D00BF4883 /* HeSlideViewController.swift */,
 			);
-			path = TopSlide;
+			path = Slide;
 			sourceTree = "<group>";
 		};
 		0AA9C4562142C998003F8201 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A62236522720BB80018B35D /* Slide */,
+				0A49646D227613BD0012E948 /* Rotate */,
+				0A12347D2270CBDB00B01CFD /* Views */,
 				0A080816227352DC00E7BF06 /* Hello */,
-				0A12347D2270CBDB00B01CFD /* UIViews */,
-				0A62236522720BB80018B35D /* TopSlide */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -297,18 +318,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A62236922720C530018B35D /* HeSlideViewController.swift in Sources */,
+				0A08B0B3212ED8C400D99210 /* AppDelegate.swift in Sources */,
 				0A08B0B5212ED8C400D99210 /* ViewController.swift in Sources */,
 				0AA9C455214106CC003F8201 /* RuntimeTool.swift in Sources */,
 				0AC3F89C213EED2600A2C4D1 /* Dispatch.swift in Sources */,
+				0AF09B5022776DAF00BF4883 /* HeNaviController.swift in Sources */,
+				0A8BBD1922789E6D00E6F30D /* HeParentViewController.swift in Sources */,
 				0A5A58B6213AE06B001FBBE5 /* OCFile.m in Sources */,
-				0A12347C2270BDE800B01CFD /* HeExpandButton.swift in Sources */,
 				0A947CCA226F700D00E1FE61 /* GCDHelper.swift in Sources */,
-				0A08B0B3212ED8C400D99210 /* AppDelegate.swift in Sources */,
+				0AF09B4A22776A1D00BF4883 /* HeSlideViewController.swift in Sources */,
+				0A12347C2270BDE800B01CFD /* HeExpandButton.swift in Sources */,
+				0AF09B4C22776A3F00BF4883 /* HeSlideView.swift in Sources */,
+				0ADE260D2275952C002B6DEF /* HeDefines.swift in Sources */,
 				0A08B0C8212EDF2E00D99210 /* Hello.swift in Sources */,
 				0A9D2C572136EFD200046A8A /* KVO.swift in Sources */,
+				0AF09B4F22776DAF00BF4883 /* HeOrientationViewController.swift in Sources */,
 				0A19F182216B897600C2F127 /* SortUtil.swift in Sources */,
-				0A62236B227234370018B35D /* HeSlideView.swift in Sources */,
 				0AD09B932130572C0006A32D /* IntExtension.swift in Sources */,
 				0A08B0BB212ED8C400D99210 /* HelloSwift.xcdatamodeld in Sources */,
 			);

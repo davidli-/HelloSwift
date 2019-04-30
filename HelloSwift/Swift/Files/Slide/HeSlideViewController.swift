@@ -9,12 +9,12 @@
 import UIKit
 import SnapKit
 
-class HeSlideViewController: UIViewController, HeSlideDelegate {
+class HeSlideViewController: HeParentViewController, HeSlideDelegate {
 
     // MARK: -属性
     //给默认值
     var mSlideView: HeSlideView = {
-        return HeSlideView(frame: CGRect.zero, titles: nil, delegate: nil)
+        return HeSlideView(frame: CGRect.zero)
     }()
     let titles:[String] = ["头条","NBA","杭州","轻松一刻","娱乐","科技","体育"]
     var indexSelect = 0
@@ -29,22 +29,34 @@ class HeSlideViewController: UIViewController, HeSlideDelegate {
     v6: ViewController?,
     v7: ViewController?
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     // MARK: -周期
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //1.创建Slide视图
         let topInset = UIApplication.shared.statusBarFrame.height
-        let rect = CGRect(x: 0, y: topInset, width: view.frame.width, height: 50)
-        mSlideView = HeSlideView(frame: rect, titles: titles, delegate: self)
-        view.addSubview(mSlideView)
+        let constraint = HeSlideConstraints(leading: 0, traling: 0, top: topInset, height: 50)
+        
+        mSlideView = HeSlideView(superview: view, constraint: constraint, titles: titles, delegate: self)
         
         //2.添加子界面
         setUps()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
 
     // MARK: - Business

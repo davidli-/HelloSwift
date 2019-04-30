@@ -13,26 +13,47 @@ protocol HeSlideDelegate {
     func selectItemAtIndex(index: Int)
 }
 
-class HeSlideView: UIScrollView {
 
+//结构体，视图的布局约束
+struct HeSlideConstraints {
+    var leading: CGFloat = 0
+    var traling: CGFloat = 0
+    var top: CGFloat = 0
+    var height: CGFloat = 0
+}
+
+class HeSlideView: UIScrollView {
+    
     //MARK: -属性
-    let titles:[String]?
-    let mDelegate: HeSlideDelegate?
+    var titles:[String]?
+    var mDelegate: HeSlideDelegate?
+    var constraint: HeSlideConstraints?
     
     //MARK: -重写
     required init?(coder aDecoder: NSCoder)
     {
-        titles = [String]()
-        mDelegate = nil
         super.init(coder: aDecoder)
     }
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
     //对外接口
-    init(frame: CGRect, titles: [String]?, delegate: HeSlideDelegate?)
+    init(superview: UIView, constraint: HeSlideConstraints,
+         titles: [String]?, delegate: HeSlideDelegate?)
     {
         self.titles = titles
         mDelegate = delegate
-        super.init(frame: frame)
+        self.constraint = constraint
+        super.init(frame: CGRect.zero)
+        superview.addSubview(self)
+        snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(constraint.top)
+            make.leading.equalToSuperview().offset(constraint.leading)
+            make.trailing.equalToSuperview().offset(constraint.traling)
+            make.height.equalTo(constraint.height)
+        }
         
         setUps()
         //添加按钮
@@ -89,7 +110,7 @@ class HeSlideView: UIScrollView {
     @objc func onItemsSelect(sender: Any){
         if let btn = sender as? UIButton {
             let index = btn.tag
-            mDelegate?.selectItemAtIndex(index: index)
+            mDelegate?.selectItemAtIndex(index: index) // mDelegate? 可选链相当于OC中的 [delegate respondsToSelector:]
         }
     }
 }
