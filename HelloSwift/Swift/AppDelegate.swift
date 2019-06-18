@@ -27,7 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions
         launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
-        UINavigationBar.appearance().barTintColor = UIColor.yellow
+        defer { // 在方法执行完之前 执行此 block 内的语句（类似于 try catch finally中的finally）
+            UINavigationBar.appearance().barTintColor = UIColor.yellow
+        }
+        // print("++\(#file) \n++\(#line) \n++\(#column) \n++\(#function)")
+        
+        // 字符串操作
+        SwiftText.onSwiftText()
+        
+        // map flatmap filter reduce
+        SwiftMapFilter.onMapFilter()
+        
         /*
         //测试SWIT混编OC
         let ocf = OCFile()
@@ -311,6 +321,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         let aHandler = completionHandlers[0]
         aHandler() //调用闭包
+    }
+    
+    //定义一个方法 取两个元素中最小值
+    func min<T: Comparable>(lh : T, rh: T) -> T {
+        return lh < rh ? lh : rh
     }
 }
 
