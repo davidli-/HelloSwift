@@ -41,3 +41,18 @@ func kPrint<T>(content: T) {
         print("\(content)")
     #endif
 }
+
+
+//**定义一个<约等于>运算符
+precedencegroup Almost {
+    associativity : right
+    higherThan : MultiplicationPrecedence
+}
+
+infix operator ~= : Almost
+
+func ~=(lh: Float, rh: Float) -> Bool {
+    let diff = fabsf(lh - rh)
+    return diff < 0.5
+}
+//**约等于定义结束

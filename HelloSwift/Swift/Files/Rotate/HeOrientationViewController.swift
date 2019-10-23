@@ -82,6 +82,7 @@ class HeOrientationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let center = NotificationCenter.default
+        setups()
         
         ///设备方向的值与布局的值相反
         
@@ -187,7 +188,18 @@ class HeOrientationViewController: UIViewController {
         }
     }
     
-    
+    func setups() {
+        // 适配颜色
+        if #available(iOS 13, *) {
+            view.backgroundColor = UIColor.init { (mTraitCollection) -> UIColor in
+                if mTraitCollection.userInterfaceStyle == UIUserInterfaceStyle.dark {
+                    return UIColor.black
+                }else {
+                    return UIColor.white
+                }
+            }
+        }
+    }
     
     /*
     // MARK: - Navigation

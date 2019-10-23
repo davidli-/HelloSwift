@@ -17,12 +17,19 @@ class GCDHelper {
         var activate : Bool
         let group = DispatchGroup()
         
-        if isSerial{//串行队列
+        //串行队列
+        if isSerial{
+            //DispatchQueue(label: "defaultSeria") 新建的队列默认是串行队列
             queue = DispatchQueue(label: "defaultSeria", qos: .userInitiated)
             activate = false
         }
-        else{//并发队列
-            queue = DispatchQueue(label: "concurrent", qos: .userInitiated, attributes: [.concurrent,.initiallyInactive])
+        //并发队列
+        else{
+            queue = DispatchQueue(label: "concurrent",
+                                  qos: .userInitiated,
+                                  attributes: [.concurrent,.initiallyInactive])
+            // 默认情况下，任务block加入到队列中后，队列会自动开始执行；
+            // 指定.initiallyInactive属性后，任务直到手动调用queue.activate()才会开始执行
             activate = true
         }
         

@@ -38,6 +38,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // map flatmap filter reduce
         SwiftMapFilter.onMapFilter()
         
+        // 测试自定义的“约等于”操作符
+        if 1.0 ~= 1.2 {
+            print("1.0 约等于 1.2")
+        }
+        
         /*
         //测试SWIT混编OC
         let ocf = OCFile()

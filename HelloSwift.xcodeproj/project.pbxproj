@@ -18,7 +18,11 @@
 		0A19F182216B897600C2F127 /* SortUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A19F181216B897600C2F127 /* SortUtil.swift */; };
 		0A46D27D22B26DC2002A6E63 /* SwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46D27C22B26DC2002A6E63 /* SwiftString.swift */; };
 		0A46D27F22B27259002A6E63 /* SwiftMapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46D27E22B27259002A6E63 /* SwiftMapFilter.swift */; };
+		0A49FCEC236076EE00A014AC /* OperationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49FCEB236076EE00A014AC /* OperationHelper.swift */; };
 		0A5A58B6213AE06B001FBBE5 /* OCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A58B5213AE06B001FBBE5 /* OCFile.m */; };
+		0A5B80BF235C2EBF00895D75 /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B80BE235C2EBF00895D75 /* Closure.swift */; };
+		0A5B80C1235C5CA800895D75 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B80C0235C5CA800895D75 /* Singleton.swift */; };
+		0A82FE9B22BA82680000109A /* AssociatedtypeTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82FE9A22BA82680000109A /* AssociatedtypeTypealias.swift */; };
 		0A8BBD1922789E6D00E6F30D /* HeParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BBD1822789E6D00E6F30D /* HeParentViewController.swift */; };
 		0A947CCA226F700D00E1FE61 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A947CC9226F700D00E1FE61 /* GCDHelper.swift */; };
 		0A9D2C572136EFD200046A8A /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D2C562136EFD200046A8A /* KVO.swift */; };
@@ -46,9 +50,13 @@
 		0A19F181216B897600C2F127 /* SortUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortUtil.swift; sourceTree = "<group>"; };
 		0A46D27C22B26DC2002A6E63 /* SwiftString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftString.swift; sourceTree = "<group>"; };
 		0A46D27E22B27259002A6E63 /* SwiftMapFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMapFilter.swift; sourceTree = "<group>"; };
+		0A49FCEB236076EE00A014AC /* OperationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationHelper.swift; sourceTree = "<group>"; };
 		0A5A58B3213AE06B001FBBE5 /* OCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFile.h; sourceTree = "<group>"; };
 		0A5A58B4213AE06B001FBBE5 /* HelloSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A5A58B5213AE06B001FBBE5 /* OCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFile.m; sourceTree = "<group>"; };
+		0A5B80BE235C2EBF00895D75 /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
+		0A5B80C0235C5CA800895D75 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		0A82FE9A22BA82680000109A /* AssociatedtypeTypealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedtypeTypealias.swift; sourceTree = "<group>"; };
 		0A8BBD1822789E6D00E6F30D /* HeParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeParentViewController.swift; sourceTree = "<group>"; };
 		0A947CC9226F700D00E1FE61 /* GCDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
 		0A9D2C562136EFD200046A8A /* KVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVO.swift; sourceTree = "<group>"; };
@@ -94,11 +102,15 @@
 				0A9D2C562136EFD200046A8A /* KVO.swift */,
 				0AC3F89B213EED2600A2C4D1 /* Dispatch.swift */,
 				0A947CC9226F700D00E1FE61 /* GCDHelper.swift */,
+				0A49FCEB236076EE00A014AC /* OperationHelper.swift */,
 				0AA9C454214106CC003F8201 /* RuntimeTool.swift */,
 				0A19F181216B897600C2F127 /* SortUtil.swift */,
 				0ADE260C2275952C002B6DEF /* HeDefines.swift */,
 				0A46D27C22B26DC2002A6E63 /* SwiftString.swift */,
 				0A46D27E22B27259002A6E63 /* SwiftMapFilter.swift */,
+				0A82FE9A22BA82680000109A /* AssociatedtypeTypealias.swift */,
+				0A5B80BE235C2EBF00895D75 /* Closure.swift */,
+				0A5B80C0235C5CA800895D75 /* Singleton.swift */,
 			);
 			path = Hello;
 			sourceTree = "<group>";
@@ -326,6 +338,7 @@
 			files = (
 				0A46D27F22B27259002A6E63 /* SwiftMapFilter.swift in Sources */,
 				0A08B0B3212ED8C400D99210 /* AppDelegate.swift in Sources */,
+				0A82FE9B22BA82680000109A /* AssociatedtypeTypealias.swift in Sources */,
 				0A08B0B5212ED8C400D99210 /* ViewController.swift in Sources */,
 				0AA9C455214106CC003F8201 /* RuntimeTool.swift in Sources */,
 				0AC3F89C213EED2600A2C4D1 /* Dispatch.swift in Sources */,
@@ -334,12 +347,15 @@
 				0A8BBD1922789E6D00E6F30D /* HeParentViewController.swift in Sources */,
 				0A5A58B6213AE06B001FBBE5 /* OCFile.m in Sources */,
 				0A947CCA226F700D00E1FE61 /* GCDHelper.swift in Sources */,
+				0A49FCEC236076EE00A014AC /* OperationHelper.swift in Sources */,
 				0AF09B4A22776A1D00BF4883 /* HeSlideViewController.swift in Sources */,
 				0A12347C2270BDE800B01CFD /* HeExpandButton.swift in Sources */,
 				0AF09B4C22776A3F00BF4883 /* HeSlideView.swift in Sources */,
+				0A5B80C1235C5CA800895D75 /* Singleton.swift in Sources */,
 				0ADE260D2275952C002B6DEF /* HeDefines.swift in Sources */,
 				0A08B0C8212EDF2E00D99210 /* Hello.swift in Sources */,
 				0A9D2C572136EFD200046A8A /* KVO.swift in Sources */,
+				0A5B80BF235C2EBF00895D75 /* Closure.swift in Sources */,
 				0AF09B4F22776DAF00BF4883 /* HeOrientationViewController.swift in Sources */,
 				0A19F182216B897600C2F127 /* SortUtil.swift in Sources */,
 				0AD09B932130572C0006A32D /* IntExtension.swift in Sources */,
@@ -420,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -474,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
